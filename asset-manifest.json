@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Daniel-Khait-React-Portfolio/static/css/main.aea3d500.css",
+    "main.js": "/Daniel-Khait-React-Portfolio/static/js/main.24e1e616.js",
+    "static/js/787.a2cb61a6.chunk.js": "/Daniel-Khait-React-Portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/logo-d4.png": "/Daniel-Khait-React-Portfolio/static/media/logo-d4.1978ff331eb7dca9b68d.png",
+    "static/media/helvetica-neu.ttf": "/Daniel-Khait-React-Portfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/logo_sub.png": "/Daniel-Khait-React-Portfolio/static/media/logo_sub.19f3ab25ab15fd848b30.png",
+    "static/media/LaBelleAurore.woff2": "/Daniel-Khait-React-Portfolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/logo-s.png": "/Daniel-Khait-React-Portfolio/static/media/logo-s.bfc9f81846bda5218dab.png",
+    "static/media/CoolveticaRg-Regular.woff2": "/Daniel-Khait-React-Portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "/Daniel-Khait-React-Portfolio/index.html",
+    "main.aea3d500.css.map": "/Daniel-Khait-React-Portfolio/static/css/main.aea3d500.css.map",
+    "main.24e1e616.js.map": "/Daniel-Khait-React-Portfolio/static/js/main.24e1e616.js.map",
+    "787.a2cb61a6.chunk.js.map": "/Daniel-Khait-React-Portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aea3d500.css",
+    "static/js/main.24e1e616.js"
+  ]
+}
