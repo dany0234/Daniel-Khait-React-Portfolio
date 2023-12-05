@@ -122,7 +122,7 @@ const Projects = () => {
     };
 
     return (
-        <div className="projects-page">
+        <div className="  projects-page">
             <div className="projects-navbar">
                 {projects.map((project, index) => (
                     <button key={index} className={activeProject === index ? 'active' : ''} onClick={() => handleProjectChange(index)}>
