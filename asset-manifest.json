@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/Daniel-Khait-React-Portfolio/static/css/main.7c68bf15.css",
+    "main.js": "/Daniel-Khait-React-Portfolio/static/js/main.1e29cdd7.js",
+    "static/js/787.a2cb61a6.chunk.js": "/Daniel-Khait-React-Portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/projects-paradox.png": "/Daniel-Khait-React-Portfolio/static/media/projects-paradox.98e46cfd968a98d00bc8.png",
+    "static/media/grid-background.png": "/Daniel-Khait-React-Portfolio/static/media/grid-background.61bfa1abab9612360b9c.png",
+    "static/media/about-me-back1.png": "/Daniel-Khait-React-Portfolio/static/media/about-me-back1.bebe2c625954dd486eac.png",
+    "static/media/home-background.png": "/Daniel-Khait-React-Portfolio/static/media/home-background.4863404269ec3df28919.png",
+    "static/media/about.png": "/Daniel-Khait-React-Portfolio/static/media/about.3dd6b46ab8d172cdc44b.png",
+    "static/media/projects.png": "/Daniel-Khait-React-Portfolio/static/media/projects.cdd2cb246ee6fae0acde.png",
+    "static/media/home.png": "/Daniel-Khait-React-Portfolio/static/media/home.1a52a89e868524092466.png",
+    "static/media/contacts.png": "/Daniel-Khait-React-Portfolio/static/media/contacts.a73de954d48bc05163e8.png",
+    "static/media/about-me-graduation.png": "/Daniel-Khait-React-Portfolio/static/media/about-me-graduation.aba49833082384889e9c.png",
+    "static/media/about-me-teen.png": "/Daniel-Khait-React-Portfolio/static/media/about-me-teen.14e7477c6c1cbe1bef7c.png",
+    "static/media/about-me-kid.png": "/Daniel-Khait-React-Portfolio/static/media/about-me-kid.760591bcea2756f32748.png",
+    "static/media/about-me-adult.png": "/Daniel-Khait-React-Portfolio/static/media/about-me-adult.9047ca1a0f8654d48b16.png",
+    "static/media/logo-d6.png": "/Daniel-Khait-React-Portfolio/static/media/logo-d6.a35f6df9b7c169460422.png",
+    "static/media/paradox3.png": "/Daniel-Khait-React-Portfolio/static/media/paradox3.4d5934d79a23671434ce.png",
+    "static/media/paradox1.png": "/Daniel-Khait-React-Portfolio/static/media/paradox1.342e0182bbfcb33255a0.png",
+    "static/media/paradox2.png": "/Daniel-Khait-React-Portfolio/static/media/paradox2.1a0472452d431865d27b.png",
+    "static/media/logo-js.png": "/Daniel-Khait-React-Portfolio/static/media/logo-js.4e8df23c0dbefba0b048.png",
+    "index.html": "/Daniel-Khait-React-Portfolio/index.html",
+    "main.7c68bf15.css.map": "/Daniel-Khait-React-Portfolio/static/css/main.7c68bf15.css.map",
+    "main.1e29cdd7.js.map": "/Daniel-Khait-React-Portfolio/static/js/main.1e29cdd7.js.map",
+    "787.a2cb61a6.chunk.js.map": "/Daniel-Khait-React-Portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c68bf15.css",
+    "static/js/main.1e29cdd7.js"
+  ]
+}
