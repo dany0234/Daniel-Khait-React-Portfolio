@@ -1,31 +1,24 @@
-import { Outlet } from 'react-router-dom';
-import Sidebar from '../Sidebar';
-import './index.scss';
+// import React from 'react';
+// import Sidebar from '../Sidebar';
+// import './index.scss';
 
-const Layout = () => {
-    return (
-        <div className='App'>
-            <Sidebar />
-            <div className='page'>
-                <span className='tags top-tags'>&lt;Body&gt;</span>
-                
-                <Outlet />
+// const Layout = ({ activePage, setActivePage }) => {
+//     console.log(setActivePage);
+//     return (
+//         <div className='App'>
+//             <Sidebar activePage={activePage} setActivePage={setActivePage} />
+//             <div className='page'>
+//                 <span className='tags top-tags'>&lt;Body&gt;</span>
 
-                <span className='tags bottom-tags'>&lt;/Body&gt;
-                <br />
-                <span className='bottom-tag-html'>&lt;/html&gt;</span>
-                </span>
+//                 {/* Components will be rendered here via App.js */}
 
-            </div>
+//                 <span className='tags bottom-tags'>&lt;/Body&gt;
+//                     <br />
+//                     <span className='bottom-tag-html'>&lt;/html&gt;</span>
+//                 </span>
+//             </div>
+//         </div>
+//     );
+// }
 
-
-
-
-        </div>
-    ) 
-   
-
-}
-
-
-export default Layout;
+// export default Layout;

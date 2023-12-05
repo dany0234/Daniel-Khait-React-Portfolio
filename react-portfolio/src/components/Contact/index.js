@@ -96,14 +96,6 @@ const Contact = () => {
           Nahlieli 11, Nahariyya <br />
           <span>dany0234@gmail.com</span>
         </div>
-        <div className="map-wrap">
-          <MapContainer center={[32.97191343, 35.1021910]} zoom={12}>
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[32.97191343, 35.1021910]} >
-              {/* <Popup>Sloba lives here, come over for a cup of coffee :)</Popup> */}
-            </Marker>
-          </MapContainer>
-        </div>
       </div>
       <Loader type="pacman" />
     </>

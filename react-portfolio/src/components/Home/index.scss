@@ -1,5 +1,17 @@
+/* Color Palette */
+$primary-color: #eeeeee;
+$background-color: #1a1a1a;
+$accent-color: #ffffff;
+$active-color: #c0c0c0;
+
 .home-page {
-   
+    // background-image: url('../../assets/images/home-background.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../assets/images/home-background.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
     .text-zone {
         position: absolute;
         left: 10%;
@@ -7,39 +19,63 @@
         transform: translateY(-50%);
         width: 40%;
         max-height: 90%;
+        color: $primary-color; // Using primary color for text
+        // background-color: $background-color;
     }
-   
+
+    .navigation-buttons {
+        display: flex;
+        justify-content: center; // Center the buttons horizontally
+        margin-top: 40px; // Space above the buttons
+
+        button {
+            background-color: transparent;
+            color: $primary-color;
+            border: 2px solid $active-color;
+            font-family: sans-serif;
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 0 10px; // Space between buttons
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $active-color;
+                color: $background-color;
+            }
+        }
+    }
     h1 {
-        color: #fff;
-        font-size: 53px;
+        font-size: 45px;
         margin: 0;
         font-family: 'Coolvetica';
         font-weight: 250;
+        color: $active-color;
 
-        &::before {
-            content: '<h1>';
-            font-family: 'La Belle Aurore';
-            color: #ffd700;
-            font-size: 18px;
-            position: absolute;
-            margin-top: -40px;
-            left: 15px;
-            opacity: 0.6;
-        }
-
+        &::before,
         &::after {
-            content: '<h1/>';
             font-family: 'La Belle Aurore';
-            color: #ffd700;
+            color: $active-color; // Active color for decorative text
             font-size: 18px;
             position: absolute;
-            margin-top: 30px;
-            margin-left: 20px;
             opacity: 0.6;
             animation: fadeIn 1s 2s backwards;
         }
 
-        .logo-container-word{
+        &::before {
+            content: '<h1>';
+            margin-top: -40px;
+            left: 15px;
+        }
+
+        &::after {
+            content: '<h1/>';
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+
+        .logo-container-word {
             display: inline-block;
             vertical-align: text-top;
         }
@@ -47,16 +83,15 @@
         img {
             width: 50px;
             margin-left: 20px;
-            opacity: 0;
             height: auto;
             animation: rotateIn 1s linear both;
             animation-delay: 1s;
-            margin-right: -4px;
+            // margin-right: -4px;
         }
     }
 
     h2 {
-        color: #8d8d8d;
+        color: $accent-color; // Accent color for subheading
         margin-top: 20px;
         font-weight: 300;
         font-size: 11px;
@@ -66,24 +101,27 @@
     }
 
     .flat-button {
-        color: #ffd700;
+        color: $active-color; // Active color for button text
         font-size: 13px;
         font-weight: 300;
-
         letter-spacing: 4px;
         font-family: sans-serif;
         text-decoration: none;
         padding: 10px 20px;
-        border: 1px solid #ffd700;
+        border: 1px solid $active-color; // Active color for button border
         margin-top: 25px;
         float: left;
         animation: fadeIn 1s 1.8s backwards;
         white-space: nowrap;
-        
+
         &:hover {
-            color: #333;
-            background: #ffd700;
+            color: $background-color; // Background color for hover text
+            background: $active-color; // Active color for hover background
         }
     }
+}
 
+.home-page .text-zone h1,
+.home-page .text-zone h2 {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
 }
