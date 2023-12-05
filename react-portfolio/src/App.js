@@ -1,7 +1,7 @@
 import React,  { useState, useEffect, useRef } from 'react';
 import './App.scss';
 import Home from './components/Home';
-import About from './components/About';
+import About from './components/AboutMe';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
 // import { Link } from 'react-scroll';
