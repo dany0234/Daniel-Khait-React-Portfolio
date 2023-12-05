@@ -1,0 +1,310 @@
+.projects-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #1a1a1a;
+    color: #eeeeee;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    background-color: #1a1a1a;
+}
+
+
+.projects-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 30px;
+
+    button {
+        background: transparent;
+        border: 2px solid #c0c0c0;
+        color: #eeeeee;
+        padding: 10px 20px;
+        margin: 0 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-radius: 5px;
+
+        &.active {
+            background-color: #333;
+            border-color: #ffd700;
+            color: #ffd700;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: #333;
+            border-color: #ffd700;
+            color: #ffd700;
+        }
+    }
+}
+
+// .project-display {
+//     position: relative;
+//     perspective: 1000px; // For 3D effect
+//     width: 80%;
+//     height: 60vh;
+// }
+
+
+
+// .arrow {
+//     cursor: pointer;
+//     font-size: 2rem;
+//     user-select: none;
+//     color: #eeeeee;
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     z-index: 3;
+// }
+// .arrow.left {
+//     left: 10px;
+// }
+
+// .arrow.right {
+//     right: 10px;
+// }
+
+// .arrow:hover {
+//     color: #ffd700;
+// }
+
+.project-details {
+    text-align: left;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 15px;
+    // background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency as needed */
+    // box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    margin: 10px 0; /* Add some space around the details */
+
+    h3 {
+        font-size: 2.5rem;
+        color: #ffd700;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    p, .credentials {
+        background: rgba(255, 255, 255, 0.1);
+        color: #ffffff;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    a.project-link {
+        display: inline-block;
+        background-color: #ffffff;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+        &:hover {
+            background-color: #ffd700;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+
+.technologies-slider {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    margin-top: 20px;
+    /* Semi-transparent background */
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    /* Rounded corners for the slider */
+
+
+    ul {
+        display: flex;
+        width: 200%;
+        /* To accommodate both sequences */
+        animation: slideTech 10s linear infinite;
+        list-style: none;
+        /* Remove default list item dots */
+        padding-left: 0;
+        /* Reset default padding */
+        margin: 0;
+        /* Reset default margin */
+
+        li {
+            padding: 10px 15px;
+            white-space: nowrap;
+            background-color: rgba(255, 255, 255, 0.1);
+            /* Slight contrast for each item */
+            margin: 5px;
+            /* Space between items */
+            border-radius: 5px;
+            /* Rounded corners for each item */
+            transition: background-color 0.3s ease, transform 0.3s ease;
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.5);
+                /* Change background on hover */
+                transform: scale(1.1);
+                /* Slight increase in size on hover */
+                color: #1a1a1a;
+            }
+        }
+    }
+}
+
+.technologies-slider .tech-item {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tech-logo {
+    width: 30px; /* Adjust as needed */
+    height: 30px; /* Adjust as needed */
+    transition: opacity 0.3s ease;
+}
+
+.tech-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Prevents the text from interfering with logo hover */
+}
+
+.tech-item:hover .tech-logo {
+    opacity: 0; /* Hide the logo on hover */
+}
+
+.tech-item:hover .tech-name {
+    opacity: 1; /* Show the technology name on hover */
+}
+
+
+@keyframes slideTech {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+// .project-images {
+//     width: 30%;
+//     display: grid;
+//     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+//     /* Creates a responsive grid with columns that adjust based on available space */
+//     grid-gap: 10px;
+//     /* Space between grid items */
+//     position: absolute;
+//     bottom: 30%;
+//     right: 21%;
+//     background: rgba(0, 0, 0, 0.5);
+//     border: 1px solid;
+//     border-radius: 10px;
+//     padding: 10px;
+//     /* Padding inside the grid container */
+
+//     .clickable-image {
+//         width: 100%;
+//         /* Images take full width of the grid column */
+//         height: auto;
+//         cursor: pointer;
+//         transition: transform 0.3s ease;
+
+//         &:hover {
+//             transform: scale(1.1);
+//         }
+//     }
+// }
+
+
+.projects-ring {
+    display: flex;
+    justify-content: center;
+    overflow: hidden; /* Hide the non-visible projects */
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.project-item {
+    width: 60%; /* Adjust size as needed */
+    height: 80%;
+    opacity: 0.5; /* Dim non-active projects */
+    transform: scale(0.8); /* Make non-active projects smaller */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: absolute; /* Absolute positioning to align in a ring */
+    border : solid #eeeeee;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Add shadow for depth */
+    border-radius: 10px; /* Rounded corners for a smoother look */
+    overflow: hidden; /* Ensures contents don't spill out of border-radius */
+    transition: transform 0.5s ease, opacity 0.5s ease, box-shadow 0.3s ease;
+    
+}
+
+
+.project-item.active {
+    opacity: 1; /* Active project fully visible */
+    transform: scale(1); /* Active project at full size */
+    z-index: 2; /* Ensure it's above other projects */
+    background: #c0c0c0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+
+.project-item.next, .project-item.prev {
+    z-index: 1; /* Ensure these are below the active project */
+    background: grey;
+    &:hover {
+        opacity: 0.7; /* Increase visibility on hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Slightly more shadow on hover */
+    }
+}
+
+.project-item.next {
+    transform: translateX(70%) scale(0.8); /* Position and scale for next project */
+    &:hover{
+        transform: translateX(70%) scale(0.85);
+    }
+}
+
+.project-item.prev {
+    transform: translateX(-70%) scale(0.8); /* Position and scale for previous project */
+    &:hover{
+        transform: translateX(-70%) scale(0.85);
+    }
+}
+
+.project-item.hidden {
+    display: none; /* Hide non-relevant projects */
+}
+
+

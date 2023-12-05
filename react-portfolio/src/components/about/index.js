@@ -7,7 +7,6 @@ import {
   faJsSquare,
   faReact,
 } from '@fortawesome/free-brands-svg-icons'
-// import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
@@ -16,20 +15,32 @@ import './../Layout/index.scss'
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
-
   useEffect(() => {
     const timerId = setTimeout(() => {
-        setLetterClass('text-animate-hover')
+      setLetterClass('text-animate-hover')
     }, 4000);
 
     return () => {
-        clearTimeout(timerId);
+      clearTimeout(timerId);
     };
-}, []);
+  }, []);
 
+  // Updated content for the About page
   return (
     <>
       <div className="container about-page">
+        <div className="background-images">
+          <div className="sliding-images">
+            <div className="image1"></div>
+            <div className="image2"></div>
+            <div className="image3"></div>
+            <div className="image4"></div>
+            <div className="image5"></div>
+            <div className="image6"></div>
+            <div className="image7"></div>
+            <div className="image8"></div>
+          </div>
+        </div>
         <div className="text-zone">
           <h1>
             <AnimatedLetters
@@ -38,23 +49,14 @@ const About = () => {
               idx={15}
             />
           </h1>
-          <p>
-            I'm a very ambitious front-end developer looking for a role in an
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
-          </p>
-          <p align="LEFT">
-            I'm quiet confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
-          </p>
-          <p>
-            If I need to define myself in one sentence that would be a family
-            person, father of a beautiful daughter, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!
-          </p>
+          <p>I am a recent 2023 graduate from Ort Braude College, where I earned my BSc in Software Engineering with an average grade of 86. </p>
+          <p>My journey in the tech industry has already begun with a fulfilling role at Paradox, where I've been working as a Fullstack Developer for the last six months. </p>
+          <p>During my tenure at Paradox, I have successfully built two web projects, details of which I will elaborate on in the projects section. </p>
+          <p>Recently, I made a significant move from Nahariya in the north to Tel Mond in the central district, marking a new chapter both personally and professionally.</p>
+          <p>Outside of my professional pursuits, I am an anime enthusiast, an animal lover, and a devoted fan of Macabbi Haifa FC. </p>
         </div>
 
-        <div className="stage-cube-cont">
+        {/* <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
               <FontAwesomeIcon icon={faAngular} color="#DD0031" />
@@ -75,20 +77,10 @@ const About = () => {
               <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
-      {/* <Loader type="pacman" /> */}
     </>
   )
-
-
-// return (
-
-//     <div>
-//         hello
-//         hello
-//     </div>
-// )
 }
 
 export default About

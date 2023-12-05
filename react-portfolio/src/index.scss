@@ -1,0 +1,21 @@
+$primary-color: #eeeeee; // Light gray for primary text
+$background-color: #1a1a1a; // Dark gray for background
+$accent-color: #ffffff; // White for accents
+$active-color: #c0c0c0; // Lighter gray for active/hover states
+
+
+html{
+  font-size: 62.5%;
+}
+
+
+body {
+  overflow-y: auto;
+  margin: 0;
+  font: 300 1.1rem 'Helvetica Neue', sans-serif;
+  color: $primary-color;
+  background: $background-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+

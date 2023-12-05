@@ -1,100 +1,65 @@
 .nav-bar {
-    background: #181818;
+    background: #021f30;
     width: 60px;
     height: 100%;
-    position: absolute;
+    position: fixed; // Changed to fixed for consistent behavior
     top: 0;
+    left: 0; // Ensure it starts from the left edge
     z-index: 3;
     min-height: 500px;
+    transition: width 0.3s ease;
 
+    .toggle-button {
+        display: none; // Hidden by default
+        position: absolute;
+        top: 10px;
+        right: -40px; // Position outside the sidebar
+        cursor: pointer;
+        z-index: 5;
+
+        svg {
+            font-size: 24px;
+            color: #fff;
+        }
+    }
 
     .logo {
         display: block;
         padding: 8px 0;
-
 
         img {
             display: block;
             margin: 8px auto;
             width: 40px;
             height: auto;
-
-
-            &.sub-logo {
-                width: 50px;
-            }
         }
     }
 
-
     nav {
-        display: block;
-        text-align: center;
+        display: flex;
+        flex-direction: column; // Stack items vertically
+        align-items: center; // Center items horizontally
         position: absolute;
         top: 50%;
         width: 100%;
-        margin-top: -120px;
+        transform: translateY(-50%);
 
-        a {
+        div {
             font-size: 22px;
             color: #4d4d4e;
-            display: block;
             line-height: 51px;
             height: 51px;
-            position: relative;
-            text-decoration: none;
+            cursor: pointer;
 
-            i {
+            svg {
                 transition: all 0.3s ease-out;
             }
 
             &:hover {
                 color: #ffd700;
-
-                svg {
-                    opacity: 0;
-                }
-
-                &:after {
-                    opacity: 1;
-                }
             }
 
-            &:after {
-                content: '';
-                font-size: 9px;
-                letter-spacing: 2px;
-                position: absolute;
-                bottom: 0;
-                display: block;
-                width: 100%;
-                text-align: center;
-                opacity: 0;
-                transition: all 0.3s ease-out;
-            }
-
-            &:first-child {
-                &::after {
-                    content: 'HOME';
-                }
-            }
-
-        }
-
-        a.about-link {
-            &:after {
-                content: 'ABOUT';
-            }
-        }
-
-        a.contact-link {
-            &:after {
-                content: 'CONTACT';
-            }
-        }
-
-        a.active {
-            svg {
+            &.active svg {
                 color: #ffd700;
             }
         }
@@ -104,31 +69,52 @@
         position: absolute;
         bottom: 20px;
         width: 100%;
-        display: block;
-        padding: 0;
         list-style: none;
         text-align: center;
+        padding: 0;
         margin: 0;
-        
-        li {
-            a {
-                padding: 7px 0;
-                display: block;
-                font-size: 15px;
-            
-                &:hover svg{
-                    color: #ffd700;
-                }
-            
-            
-            
+
+        li a {
+            padding: 7px 0;
+            display: block;
+            font-size: 15px;
+            color: #4d4d4e;
+            text-decoration: none;
+
+            &:hover svg {
+                color: #ffd700;
             }
-
-
         }
-    
-    
-    
-    
     }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        width: 60px; // Adjust width as needed
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: width 0.3s ease;
+
+        .toggle-button {
+            display: block; // Show the toggle button on mobile
+        }
+
+        nav, ul {
+            display: none; // Hide nav and ul in the collapsed state
+        }
+
+        &.open {
+            width: 80%; // Expand to full width when open
+            nav, ul {
+                display: block; // Show nav and ul when open
+            }
+        }
+    }
+}
+
+
+.nav-bar nav div.active svg {
+    color: #ffd700;
 }
