@@ -1,0 +1,75 @@
+/* Color Palette */
+$primary-color: #eeeeee;
+$background-color: #1a1a1a;
+$accent-color: #ffffff;
+$active-color: #c0c0c0;
+
+.page {
+  width: 100%;
+  height: auto; // Adjusted for new layout
+  position: relative; // Changed from absolute for better flow
+}
+
+.top-tags, .bottom-tag-html {
+  color: $active-color; // Active color for these tags
+  opacity: 0.6;
+  font-size: 18px;
+  font-family: 'La Belle Aurore', cursive;
+  position: relative; // Adjusted positioning
+}
+
+.container {
+  height: auto;
+  width: 100%;
+  min-height: 100vh; // Ensure each section is tall enough
+  position: relative; // Changed from absolute
+  opacity: 1; // Set to fully visible
+  margin: 0 auto;
+  z-index: 1;
+  transform-style: preserve-3d;
+  display: flex; // Using flexbox for internal layout
+  flex-direction: column;
+  align-items: center; // Centering content
+  justify-content: center; // Centering content
+  padding: 50px 0; // Add some vertical padding
+  background-color: $background-color; // Background color for the container
+}
+
+.container h1 {
+  font-size: 45px;
+  font-family: 'Coolvetica';
+  color: $accent-color; // Accent color for headers
+  font-weight: 300;
+  position: relative;
+  margin-bottom: 40px;
+  // Maintain existing before and after pseudoelements
+}
+
+.container p {
+  font-size: 13px;
+  color: $primary-color; // Primary color for paragraph text
+  font-family: sans-serif;
+  font-weight: 300;
+  max-width: fit-content;
+  // Maintain existing animations
+}
+
+.text-zone {
+  width: 80%; // Adjust as needed for new layout
+  max-width: 1200px; // Prevent it from getting too wide
+  margin: 0 auto; // Centering horizontally
+  position: relative; // Changed from absolute
+  padding: 20px; // Add some padding for text
+  color: $primary-color; // Primary color for text inside text-zone
+}
+
+@media screen and (max-width: 1200px) {
+  .text-zone {
+    width: 90%; // More width on smaller screens
+  }
+
+  // Adjust other styles for mobile responsiveness
+  .container h1, .container p {
+    text-align: center; // Center text on smaller screens
+  }
+}
