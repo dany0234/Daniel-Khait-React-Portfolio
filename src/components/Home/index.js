@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './index.scss';
 import LogoTitle from '../../assets/images/logo-d6.png';
+import LinkedInIcon from '../../assets/icons/linkedin.svg';
+import GitHubIcon from '../../assets/icons/github.svg';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
 
@@ -21,6 +23,14 @@ const Home = ({ onNavigate }) => {
 
         return () => clearTimeout(timer);
     }, []);
+
+    const handleLinkedInClick = () => {
+        window.open('https://www.linkedin.com/in/your-profile', '_blank');
+    };
+
+    const handleGitHubClick = () => {
+        window.open('https://github.com/yourusername', '_blank');
+    };
 
     return (
         <div className="container home-page">
@@ -43,6 +53,24 @@ const Home = ({ onNavigate }) => {
             </div>
 
             <div className="navigation-buttons">
+                {/* <div className='link-buttons'>
+                    <LinkedInIcon onClick={handleLinkedInClick} />
+                    <GitHubIcon onClick={handleGitHubClick} />
+                </div> */}
+                <div className='link-buttons'>
+                    <img 
+                        src={LinkedInIcon} 
+                        alt="LinkedIn" 
+                        onClick={handleLinkedInClick}
+                        style={{ cursor: 'pointer' }} 
+                    />
+                    <img 
+                        src={GitHubIcon} 
+                        alt="GitHub" 
+                        onClick={handleGitHubClick}
+                        style={{ cursor: 'pointer' }} 
+                    />
+                </div>
                 <button onClick={() => onNavigate('about')}>About</button>
                 <button onClick={() => onNavigate('projects')}>Projects</button>
             </div>
