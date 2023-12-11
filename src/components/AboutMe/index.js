@@ -24,23 +24,10 @@ const About = () => {
       clearTimeout(timerId);
     };
   }, []);
-
-  // Updated content for the About page
+  
   return (
-    <>
       <div className="container about-page">
-        {/* <div className="background-images">
-          <div className="sliding-images">
-            <div className="image1"></div>
-            <div className="image2"></div>
-            <div className="image3"></div>
-            <div className="image4"></div>
-            <div className="image5"></div>
-            <div className="image6"></div>
-            <div className="image7"></div>
-            <div className="image8"></div>
-          </div>
-        </div> */}
+
         <div className="text-zone">
           <h1>
             <AnimatedLetters
@@ -79,7 +66,6 @@ const About = () => {
           </div>
         </div> */}
       </div>
-    </>
   )
 }
 
