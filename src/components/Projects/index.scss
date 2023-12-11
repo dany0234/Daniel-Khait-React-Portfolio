@@ -10,16 +10,28 @@
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-    background-color: #1a1a1a;
+    // background: linear-gradient(rgb(239, 239, 239,0), rgba(218, 218, 218, 0)), url('../../assets/images/projects-back1.png') ;
+    // background-size: contain;
+    // background-position: center;
+    // background-repeat: no-repeat;
 }
 
+.projects-background {
+    display: contents;
+    background: linear-gradient(rgb(239, 239, 239,0), rgba(218, 218, 218, 0)), url('../../assets/images/projects-back1.png') ;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
 
 .projects-navbar {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 80%;
-    margin-bottom: 30px;
+    margin-bottom: 5%;
+    margin-top: 5%;
 
     button {
         background: transparent;
@@ -42,6 +54,7 @@
             background-color: #333;
             border-color: #ffd700;
             color: #ffd700;
+            scale: (1.1);
         }
     }
 }
@@ -55,27 +68,27 @@
 
 
 
-// .arrow {
-//     cursor: pointer;
-//     font-size: 2rem;
-//     user-select: none;
-//     color: #eeeeee;
-//     position: absolute;
-//     top: 50%;
-//     transform: translateY(-50%);
-//     z-index: 3;
-// }
-// .arrow.left {
-//     left: 10px;
-// }
+.arrow {
+    cursor: pointer;
+    font-size: 2rem;
+    user-select: none;
+    color: #eeeeee;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+.arrow.left {
+    left: 10%;
+}
 
-// .arrow.right {
-//     right: 10px;
-// }
+.arrow.right {
+    right: 10%;
+}
 
-// .arrow:hover {
-//     color: #ffd700;
-// }
+.arrow:hover {
+    color: #ffd700;
+}
 
 .project-details {
     text-align: left;
@@ -258,7 +271,7 @@
 .project-item {
     width: 60%; /* Adjust size as needed */
     height: 80%;
-    opacity: 0.5; /* Dim non-active projects */
+    opacity: 0.8; /* Dim non-active projects */
     transform: scale(0.8); /* Make non-active projects smaller */
     transition: transform 0.5s ease, opacity 0.5s ease;
     position: absolute; /* Absolute positioning to align in a ring */
