@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './index.scss';
 import LogoD from '../../assets/images/logo-daniel-khait.png';
 import LinkedInIcon from '../../assets/icons/linkedin.svg';
 import GitHubIcon from '../../assets/icons/github.svg';
+import hamburgerIcon from '../../assets/icons/hamburger-icon.png';
 
 const NavBar = ({ onNavigate, activeSection }) => {
+    const [isNavExpanded, setIsNavExpanded] = useState(false);
+
+    const toggleNav = () => {
+        setIsNavExpanded(!isNavExpanded);
+    };
+
     return (
-        <div className="nav-bar">
+        <div className={`nav-bar ${isNavExpanded ? 'expanded' : ''}`}>
+            <div className="nav-toggle" onClick={toggleNav}>
+                <img src={hamburgerIcon} alt="menu" />
+            </div>
             <div className="nav-brand">
                 <img src={LogoD} alt="logo" />
             </div>
