@@ -1,12 +1,13 @@
 /* Color Palette */
-$primary-color: #ffffff;
-$background-color: #1a1a1a;
+$primary-color: #000000;
+$background-color: #ffffff;
 $accent-color: #ffffff;
-$active-color: #c0c0c042;
+$active-color: #000000;
 
 .home-page {
     // background-image: url('../../assets/images/home-background.png');
-    background: linear-gradient(rgb(240, 240, 240,0.9), rgba(184, 184, 184, 0)), url('../../assets/images/home-background.png');
+    // background: linear-gradient(rgb(240, 240, 240,0.9), rgba(184, 184, 184, 0)), url('../../assets/images/home-background.png');
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8)), url('../../assets/images/home-background.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,7 +18,7 @@ $active-color: #c0c0c042;
         left: 10%;
         top: 50%;
         transform: translateY(-50%);
-        width: 40%;
+        width: 45%;
         max-height: 90%;
         color: $primary-color; // Using primary color for text
         // background-color: $background-color;
@@ -92,17 +93,17 @@ $active-color: #c0c0c042;
             height: auto;
             animation: rotateIn 1s linear both;
             animation-delay: 1s;
-            // margin-right: -4px;
+            margin-right: -3px;
         }
     }
 
     h2 {
-        color: $accent-color; // Accent color for subheading
+        color: $primary-color; // Accent color for subheading
         margin-top: 20px;
         font-weight: 300;
-        font-size: 11px;
+        font-size: 15px;
         font-family: sans-serif;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
         animation: fadeIn 1s 1.8s backwards;
     }
 
@@ -122,16 +123,17 @@ $active-color: #c0c0c042;
         background-color: rgb(125, 125, 125, 0.5);
 
         &:hover {
-            color: $background-color; // Background color for hover text
+            color: $background-color;
             background: $active-color; // Active color for hover background
+            cursor: pointer;
         }
     }
 }
 
-.home-page .text-zone h1,
-.home-page .text-zone h2 {
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
-}
+// .home-page .text-zone h1,
+// .home-page .text-zone h2 {
+//     text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+// }
 
 .link-buttons {
     display: flex;
@@ -147,5 +149,42 @@ $active-color: #c0c0c042;
     object-fit: contain; /* Keep image aspect ratio */
     &:hover{
         transform: scale(1.2);
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .home-page {
+        .text-zone {
+            left: 5%;
+            width: 90%;
+            h1 {
+                font-size: 30px; // Smaller font size for mobile
+            }
+            h2 {
+                font-size: 10px; // Smaller font size for mobile
+            }
+        }
+
+        .navigation-buttons {
+            top: 60%; // Adjust position for mobile
+            right: 5%; // Adjust position for mobile
+            button {
+                font-size: 20px; // Smaller font size for buttons
+                padding: 10px 15px; // Adjust padding for buttons
+            }
+        }
+
+        .link-buttons img {
+            width: 30px; // Adjust icon size for mobile
+            height: 30px; // Adjust icon size for mobile
+        }
+
+        .flat-button {
+            font-size: 12px; // Smaller font size for mobile
+        }
+    }
+    .home-page h1 img{
+        width: 33px;
     }
 }

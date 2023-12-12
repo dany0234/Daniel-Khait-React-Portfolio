@@ -49,7 +49,8 @@ const Home = ({ onNavigate }) => {
                 </h1>
 
                 <h2> Fullstack Developer / Integration Engineer / JavaScript Expert </h2>
-                <Link to='/contact' className="flat-button">CONTACT ME</Link>
+                {/* <Link to='/contact' className="flat-button">CONTACT ME</Link> */}
+                <button className='flat-button' onClick={() => onNavigate('contact')}>CONTACT ME</button>
             </div>
 
             <div className="navigation-buttons">
