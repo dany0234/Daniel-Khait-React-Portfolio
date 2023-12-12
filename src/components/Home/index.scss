@@ -18,7 +18,7 @@ $active-color: #000000;
         left: 10%;
         top: 50%;
         transform: translateY(-50%);
-        width: 40%;
+        width: 45%;
         max-height: 90%;
         color: $primary-color; // Using primary color for text
         // background-color: $background-color;
@@ -183,5 +183,8 @@ $active-color: #000000;
         .flat-button {
             font-size: 12px; // Smaller font size for mobile
         }
+    }
+    .home-page h1 img{
+        width: 33px;
     }
 }
