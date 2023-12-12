@@ -7,9 +7,18 @@ import orderdineBackground from "../../assets/images/order&dine-background.png"
 import instagramBackground from "../../assets/images/instagram-background.png"
 import babyshieldBackground from "../../assets/images/babyshield-background.png"
 import DoubleBackground from "../../assets/images/projects-paradox.png"
-import LogoReact from "../../assets/images/logo-js.png"
+import LogoReact from "../../assets/images/logo-react.png"
 import LogoJs from "../../assets/images/logo-js.png"
+import LogoMongo from "../../assets/images/logo-mongo.png"
+import LogoNodejs from "../../assets/images/logo-nodejs.png"
+import LogoHeroku from "../../assets/images/logo-heroku.png"
+import LogoWhatsapp from "../../assets/images/logo-whatsapp.png"
+import LogoTwilio from "../../assets/images/logo-twilio.png"
+import LogoDropbox from "../../assets/images/logo-dropbox.png"
+import LogoGmail from "../../assets/images/logo-gmail.png"
+import LogoRedux from "../../assets/images/logo-redux.png"
 
+import GitHubIcon from '../../assets/icons/github.svg';
 
 import './index.scss';
 import Modal from '../Modal';
@@ -24,10 +33,11 @@ const Projects = () => {
             title: "Paradox-Activation",
             description: "A web application for activating guarantee policies. Featuring a user-friendly form for customers and an admin panel for management. ",
             built: "Built using React with Redux Toolkit, Node.js, MVC architecture, REST API, and MongoDB. Deployed on Heroku and integrates third-party APIs like Gmail, Dropbox, Twilio, and a WhatsApp bot.",
-            technologies: ["React", "Redux Toolkit", "Java Script", "Node.js", "MongoDB", "Heroku", "Gmail API", "Dropbox API", "Twilio", "WhatsApp"],
+            technologies: ["React", "Redux", "Java Script", "Node.js", "MongoDB", "Heroku", "Gmail", "Dropbox", "Twilio", "Whatsapp"],
             image: [paradox1, paradox2, paradox3],
-            link: "https://paradox-activation.com", // Update with actual project URL
-            credentials: "Test Credentials: User: '0529999999' Admin: '0529999998'  OTP : '111111'" // Update with actual test credentials
+            link: "https://paradox-activation-0d319237261f.herokuapp.com/",
+            credentials: "Test Credentials: User: '0529999999' Admin: '0529999998'  OTP : '111111'",
+            githubLink: "https://github.com/dany0234/paradox-activation"
         },
         {
             id: "instagram",
@@ -36,7 +46,8 @@ const Projects = () => {
             built: "Built using React with Redux Toolkit, Node.js, MVC architecture, REST API, and MongoDB. Deployed on Heroku and integrates third-party APIs like Gmail, Dropbox, Twilio, and a WhatsApp bot.",
             technologies: ["Vue.js", "JavaScript", "Node.js", "MongoDB", "Express", "CSS", "HTML", "REST API"],
             image: "path/to/project1-image.jpg",
-            link: "http://link-to-project1.com"
+            link: "http://link-to-project1.com",
+            githubLink: "https://github.com/dany0234/insta-vuejs",
         },
         {
             id: "babyshield",
@@ -44,7 +55,9 @@ const Projects = () => {
             description: "BabyShield is an innovative three-part safety system designed to monitor infants. It features an AI-driven Audio Spectrogram Transformer (AST) that detects a baby's cry and triggers a surveillance system to record the incident. This footage is then securely uploaded to Firebase. Simultaneously, a user-friendly Android app alerts parents and provides instant access to the video, ensuring peace of mind and real-time awareness of their child's well-being.",
             technologies: ["Python", "Machine Learning", "Audio Processing", "Firebase", "Android", "Java", "Real-time Data", "Video Processing", "Cloud Storage"],
             image: "path/to/project1-image.jpg",
-            link: "http://link-to-project1.com"
+            link: "http://link-to-project1.com",
+            githubLink: "https://github.com/BorisLasker/A-Safe-Invironment-For-Our-Little-Ones",
+            videoLink: "https://clipchamp.com/watch/32NHOANB8on"
         },
         {
             id: "orderdine",
@@ -52,7 +65,8 @@ const Projects = () => {
             description: "Order & Dine is a tailored web application developed for a catering company, designed to streamline their order management and kitchen operations. The app features a user-friendly interface for customers to easily place orders through a detailed form. On the backend, it equips kitchen staff with an efficient system to manage these orders, providing clear insights into required food quantities and order specifics. This dual-component app not only enhances customer experience but also optimizes kitchen workflow, embodying a perfect blend of customer service and operational management.",
             technologies: ["HTML", "CSS", "JavaScript", "React", "Node.js", "MongoDB", "Express", "REST API", "Cloud Services"],
             image: "path/to/project1-image.jpg",
-            link: "http://link-to-project1.com"
+            link: "http://link-to-project1.com",
+            githubLink: "",
         },
         {
             id: "contact",
@@ -60,7 +74,8 @@ const Projects = () => {
             description: "Contact Connect is a dual-frontend, single-backend application, primarily developed as a learning project to understand multi-platform integration. It features a simple yet functional contact list, accessible through both a C# Winform and an Android app in Java. The interfaces, mirroring each other, display a table of contacts with options to create, modify, delete, and filter entries. Personal data and image upload functionalities are included. The backend, built with a C# web service and SQL database, is hosted on Azure, ensuring seamless data synchronization between the two fronts. This project showcases the practical application of cross-platform development and cloud integration in a straightforward, user-centric design.",
             technologies: ["C#", "WinForms", "Java", "Android Development", "SQL", "Azure", "Web Services", "REST API", "Cloud Database", "Docker"],
             image: "path/to/project1-image.jpg",
-            link: "http://link-to-project1.com"
+            link: "http://link-to-project1.com",
+            githubLink: "",
         },
     ];
 
@@ -167,8 +182,24 @@ const Projects = () => {
                 return LogoReact
             case 'Java Script':
                 return LogoJs
+            case 'MongoDB':
+                return LogoMongo
+            case 'Heroku':
+                return LogoHeroku
+            case 'Java Script':
+                return LogoJs
+            case 'Dropbox':
+                return LogoDropbox
+            case 'Whatsapp':
+                return LogoWhatsapp
+            case 'Twilio':
+                return LogoTwilio
+            case 'Gmail':
+                return LogoGmail
+            case 'Redux':
+                return LogoRedux
             case 'Node.js':
-                return '/path-to-nodejs-logo.png'; // Replace with actual path
+                return LogoNodejs; // Replace with actual path
             // Add more cases for other technologies
             default:
                 return '/path-to-default-logo.png'; // A default logo if needed
@@ -196,19 +227,26 @@ const Projects = () => {
                         >
                             <div className="project-content">
                                 <h3>{project.title}</h3>
-                                {/* i want the backgrounds to be rendered as well for all the projects */}
+                                <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                                        <img
+                                            src={GitHubIcon}
+                                            alt="GitHub"
+                                            style={{ cursor: 'pointer' , height: '30px'}}
+                                        />
+                                    </a>
                             </div>
                             {index === activeProject && (
                                 <div className="project-details">
                                     {/* <img className='img' src={projects[activeProject].image} alt={projects[activeProject].title} /> */}
 
                                     <p>{projects[activeProject].description}</p>
-                                    <p>{projects[activeProject].built}</p>
+                                    {/* <p>{projects[activeProject].built}</p> */}
 
-                                    <p className="credentials">{projects[activeProject].credentials}</p>
-                                    <a href={projects[activeProject].link} target="_blank" rel="noopener noreferrer" className="project-link">
+                                    {/* <p className="credentials">{projects[activeProject].credentials}</p> */}
+                                    {/* <a href={projects[activeProject].link} target="_blank" rel="noopener noreferrer" className="project-link">
                                         Try Me Out!
-                                    </a>
+                                    </a> */}
+
 
                                     {/* <div className="project-images">
                                     {projects[activeProject].image.map((img, index) => (
