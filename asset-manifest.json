@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Daniel-Khait-React-Portfolio/static/css/main.ace4be70.css",
-    "main.js": "/Daniel-Khait-React-Portfolio/static/js/main.4612186c.js",
-    "static/js/787.a2cb61a6.chunk.js": "/Daniel-Khait-React-Portfolio/static/js/787.a2cb61a6.chunk.js",
+    "main.css": "/Daniel-Khait-React-Portfolio/static/css/main.900903af.css",
+    "main.js": "/Daniel-Khait-React-Portfolio/static/js/main.9ee20ca6.js",
+    "static/js/787.cf482a7c.chunk.js": "/Daniel-Khait-React-Portfolio/static/js/787.cf482a7c.chunk.js",
     "static/media/projects-back1.png": "/Daniel-Khait-React-Portfolio/static/media/projects-back1.9f730baf8751c4424010.png",
     "static/media/order&dine-background.png": "/Daniel-Khait-React-Portfolio/static/media/order&dine-background.4c9fe0113a6177e5259e.png",
     "static/media/projects-paradox.png": "/Daniel-Khait-React-Portfolio/static/media/projects-paradox.98e46cfd968a98d00bc8.png",
@@ -24,15 +24,15 @@
     "static/media/paradox1.png": "/Daniel-Khait-React-Portfolio/static/media/paradox1.342e0182bbfcb33255a0.png",
     "static/media/paradox2.png": "/Daniel-Khait-React-Portfolio/static/media/paradox2.1a0472452d431865d27b.png",
     "static/media/logo-js.png": "/Daniel-Khait-React-Portfolio/static/media/logo-js.4e8df23c0dbefba0b048.png",
-    "static/media/github.svg": "/Daniel-Khait-React-Portfolio/static/media/github.e2eaa700096139913a59cae9c01ab3d4.svg",
+    "static/media/github.svg": "/Daniel-Khait-React-Portfolio/static/media/github.4dcb5b69055fca16836cbc2669706009.svg",
     "index.html": "/Daniel-Khait-React-Portfolio/index.html",
     "static/media/linkedin.svg": "/Daniel-Khait-React-Portfolio/static/media/linkedin.0618cc9075b54a042c69cdf3e1cb1fa4.svg",
-    "main.ace4be70.css.map": "/Daniel-Khait-React-Portfolio/static/css/main.ace4be70.css.map",
-    "main.4612186c.js.map": "/Daniel-Khait-React-Portfolio/static/js/main.4612186c.js.map",
-    "787.a2cb61a6.chunk.js.map": "/Daniel-Khait-React-Portfolio/static/js/787.a2cb61a6.chunk.js.map"
+    "main.900903af.css.map": "/Daniel-Khait-React-Portfolio/static/css/main.900903af.css.map",
+    "main.9ee20ca6.js.map": "/Daniel-Khait-React-Portfolio/static/js/main.9ee20ca6.js.map",
+    "787.cf482a7c.chunk.js.map": "/Daniel-Khait-React-Portfolio/static/js/787.cf482a7c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ace4be70.css",
-    "static/js/main.4612186c.js"
+    "static/css/main.900903af.css",
+    "static/js/main.9ee20ca6.js"
   ]
 }
